@@ -15,6 +15,9 @@ sywac
   .command({
     flags: 'cancel <order-id>',
     desc: 'cancel an existing order',
+    setup: sywac => {
+      sywac.example('$0 198603', { desc: 'cancel an order' });
+    },
     run: argv => {
       console.log(1);
     }
