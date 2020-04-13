@@ -20,6 +20,16 @@ const bunker = require('sywac-style-bunker');
 sywac.style(bunker);
 ```
 
-## Blah
+> *NOTE* This style renders group headers without trailing colons and in uppercase, but
+> the underlying group names aren't changed - keep this in mind if you use `.groupOrder`,
+> for example.
 
-WIP
+```js
+sywac
+  .number('port', { group: 'Server Options:' })
+  .groupOrder(['Arguments:', 'Options:', 'Server Options:'])
+  .style(bunker);
+
+// Renders as ARGUMENTS, OPTIONS, and SERVER OPTIONS.
+```
+
