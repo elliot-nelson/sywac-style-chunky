@@ -1,4 +1,4 @@
-# sywac-style-bunker
+# sywac-style-chunky
 
 > A chunky style for your [sywac](https://sywac.io/) CLI application.
 
@@ -8,16 +8,16 @@
 
 ```console
 $ npm install sywac
-$ npm install sywac-style-bunker
+$ npm install sywac-style-chunky
 ```
 
 ## Usage
 
 ```js
 const sywac = require('sywac');
-const bunker = require('sywac-style-bunker');
+const chunky = require('sywac-style-chunky');
 
-sywac.style(bunker);
+sywac.style(chunky);
 ```
 
 > *NOTE* This style renders group headers without trailing colons and in uppercase, but
@@ -28,8 +28,15 @@ sywac.style(bunker);
 sywac
   .number('port', { group: 'Server Options:' })
   .groupOrder(['Arguments:', 'Options:', 'Server Options:'])
-  .style(bunker);
+  .style(chunky);
 
-// Renders as ARGUMENTS, OPTIONS, and SERVER OPTIONS.
+// ARGUMENTS
+//   ...
+//
+// OPTIONS
+//   ...
+//
+// SERVER OPTIONS
+//   ...
 ```
 

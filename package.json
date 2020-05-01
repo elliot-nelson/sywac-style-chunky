@@ -1,7 +1,10 @@
 {
-  "name": "sywac-style-bunker",
+  "name": "sywac-style-chunky",
   "version": "1.0.0",
   "description": " A chunky style for your sywac CLI application.",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "sywac": "^1.3.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
   }
 }
